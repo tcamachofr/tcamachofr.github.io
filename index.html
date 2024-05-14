@@ -123,7 +123,13 @@
             margin: -10px 0px 5px 0px;
             font-size: 14pt;
             background-color: #42005B;
-        } 
+        }
+        .caroutextdes {
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            font-size: 14pt;
+            background-color: #42005B;
+        }
         
         .abouttext {
             text-align: left;
@@ -165,6 +171,9 @@
         text-align: left;
         margin: auto;
         }
+        
+        
+        
     mainf {
         display: flex; 
         }
@@ -199,7 +208,12 @@
                 text-transform: uppercase;
                 margin: auto auto auto -20px;
             }            
-            
+            .abouttext {
+                text-align: left;
+                margin: 0px 0px;
+                font-size: 14pt;
+                color: #CC66EE;
+        }
         }
         
         @media only screen and (max-width: 603px) and (min-width: 548px) {
@@ -260,7 +274,7 @@
             
             .abouttext {
                 text-align: left;
-                margin: 5px 0px;
+                margin: 10px 0px 5px 0px;
                 font-size: 14pt;
                 color: #CC66EE;
             
@@ -308,6 +322,11 @@
                     margin: -10px auto 10px auto;
                     font-size: 18pt;
                 }
+                .caroutextdes {
+                    text-align: center;
+                    margin: 0px auto 10px auto;
+                    font-size: 18pt;
+                }
                 
                 .abouttext {
                     text-align: left;
@@ -337,17 +356,17 @@
                     max-width: 1430px;
                     margin: auto;
                 }
-                .womp{
+                .womp {
                     max-width: 1200;
                     text-align: center;
                     margin: auto;
                 }
-                .womp2{
+                .womp2 {
                     max-width: 1000;
                     text-align: center;
                     margin: auto;
                 }                
-                .womp3{
+                .womp3 {
                     max-width: 540;
                     text-align: left;
                     margin: auto;
@@ -355,9 +374,52 @@
                 mainf {
                     display: flex;
                 }
-            }
+                .carousel-item {
+                    height: 575px;
+                }
+
           
         /* Change body text color to either white or a lighter purple, hard to see. Text may also be too small. Fix padding on text, especially under section names like "Misc Work". In respects to the About Me: Show, don't tell. Put the icons for the programs, and maybe show work from different programs*/
+        
+        
+        
+        /*Link email at bottom. Shorten navbar subtitle to "Based in NYC". 
+        Place a carousel in either Animations or Misc Work. 
+        In Mobile View, let animations each have their own row so they aren't so small. 
+        Make the animations all the same dimensions. 
+        Add more padding to the top and bottom of About Me.*/
+        
+        
+        
+/*<div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-color:red;">
+      <img src="..." class="d-block w-100" alt="First Slide">
+    </div>
+    <div class="carousel-item" style="background-color:blue;">
+      <img src="..." class="d-block w-100" alt="Second Slide">
+    </div>
+    <div class="carousel-item" style="background-color:yellow;">
+      <img src="..." class="d-block w-100" alt="Third Slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        
+.carousel-item{
+    height:500px; <<<This can be changed to fit in a box probably
+    
+}        
+        
+        */
+        
         
         
         </style>
@@ -404,6 +466,9 @@
 <div class="text">    
     These are some bits of animation I've done for class. Even practice has gotta be a little fun.
 </div>    
+    
+    
+    
     
 <div class="womp">    
     <mainf>
@@ -464,36 +529,32 @@
         </articlef>
     </mainf>    
 </div>
-<div class="womp2">    
+<div class="womp">    
     <mainf>    
-        <asidef>
-            <div class="miniheldsolo">
+        <articlef>
                 <div class="image">
                     <img src="travis_camacho_whoa.gif">
                 </div>
-            </div>
-        </asidef>
-        <asidef>
-            <div class="miniheldsolo">
+        </articlef>
+        <articlef>
                 <div class="image">
                     <img src="travis_camacho_bird.gif">
                 </div>
-            </div>
-        </asidef>
+        </articlef>
     </mainf>
 </div>    
-<div class="womp2">    
+<div class="womp">    
     <mainf>    
-        <asidef>
+        <articlef>
             <div class="textdes">    
                 The assignment here was to match audio of a person making noises, but I feel it still works without sound.
             </div>           
-        </asidef>
-        <asidef>
+        </articlef>
+        <articlef>
             <div class="textdes">    
                 A wings flapping animation. Bird sold separately.
             </div>           
-        </asidef>
+        </articlef>
     </mainf>    
 </div>    
 <br>    
@@ -513,52 +574,41 @@
     <mainf>
         <articlef> 
             <div class="beingheld">
-                <div class="image">
-                    <img src="travis_camacho_skater_goat.png"> 
-                </div>
-            </div>
-        </articlef>
-    </mainf>
-    <mainf>
-        <articlef>
-            <div class="textdes">    
+                <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-color:none;">
+      <img src="travis_camacho_skater_goat.png" class="d-block w-100" alt="First Slide"> <div class="caroutextdes">    
                 This is what happens when you sing like a goat and your song gets put into a skateboarding game. Good song though.
             </div>
+    </div>
+    <div class="carousel-item" style="background-color:none;">
+      <img src="travis_camacho_frendlyy.png" class="d-block w-100" alt="Second Slide"> <div class="caroutextdes">    
+            My best of frends, Frendlyy. Don't worry, he doesn't bite... If you keep an eye on him.    
+            </div>
+    </div>
+    <div class="carousel-item" style="background-color:none;">
+      <img src="travis_camacho_leo_drip.png" class="d-block w-100" alt="Third Slide"> <div class="caroutextdes">    
+            One of my fabled real friends, Leo. He's a cool dude, look at him.
+            </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev" style="background-color:#405;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next" style="background-color:#405;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ 
+            </div>
         </articlef>
     </mainf>
 </div>
-<div class="womp2">
-    <mainf>
-        <asidef>
-            <div class="miniheld">
-                <div class="image">
-                    <img src="travis_camacho_frendlyy.jpg">
-                </div>
-            </div>
-        </asidef>
-        <asidef>
-            <div class="miniheld">
-                <div class="image">
-                    <img src="travis_camacho_leo_drip.jpg">
-                </div>
-            </div>
-        </asidef>
-    </mainf>
-</div>
-<div class="womp2">
-    <mainf>
-        <asidef>
-            <div class="textdes">    
-            My best of frends, Frendlyy. Don't worry, he doesn't bite... If you keep an eye on him.    
-            </div>        
-        </asidef>
-        <asidef>
-            <div class="textdes">    
-            One of my fabled real friends, Leo. He's a cool dude, look at him.
-            </div>    
-        </asidef>
-    </mainf>
-</div>    
+
+                
+                
 <br>
     
 <section id="about">
@@ -641,7 +691,7 @@
 </section>
  
 <div class="text">    
-    Hit me up at <b>tcamachofr@gmail.com</b> and we can get some sick stuff made.    
+    Hit me up at <a style="color:#CC66FF" href="https://www.gmail.com"> <b>tcamachofr@gmail.com</b> </a> and we can get some sick stuff made.    
 </div>    
     
 <footer>
